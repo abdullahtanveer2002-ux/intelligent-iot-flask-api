@@ -35,6 +35,15 @@ def index():
 def health():
     return jsonify({"status": "ok"}), 200
 
+
+@app.route("/version", methods=["GET"])
+def version():
+    return jsonify({
+        "version": "2.0",
+        "message": "Workshop 2 deployment"
+    }), 200
+
+
 # ---------- DEVICES API (Intelligent IoT Solutions case) ----------
 
 @app.route("/api/devices", methods=["GET"])

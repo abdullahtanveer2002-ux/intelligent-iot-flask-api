@@ -4,3 +4,8 @@ venv/
 .venv/
 .DS_Store
 gunicorn.ctl
+
+.env
+.env.local
+.env.remote
+
